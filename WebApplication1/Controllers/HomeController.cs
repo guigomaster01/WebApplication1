@@ -10,6 +10,16 @@ namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
+        public IActionResult ExibirAluno()
+        {
+            var aluno = new AlunoModel()
+            {
+                Nome = "Gabriel Gassner",
+                Curso = "Desenvolvimento de Sistemas"
+            };
+
+            return View(aluno);
+        }
         public IActionResult Pratica()
         {
             return View();

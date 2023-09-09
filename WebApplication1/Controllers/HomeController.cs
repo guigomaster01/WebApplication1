@@ -18,8 +18,6 @@ namespace WebApplication1.Controllers
                 Curso = "Desenvolvimento de Sistemas"
             };
 
-            return View(aluno);
-        }
         public IActionResult Pratica()
         {
             return View();

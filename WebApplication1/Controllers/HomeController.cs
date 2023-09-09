@@ -17,6 +17,8 @@ namespace WebApplication1.Controllers
                 Nome = "Gabriel Gassner",
                 Curso = "Desenvolvimento de Sistemas"
             };
+            return View(aluno);
+        }
 
         public IActionResult Pratica()
         {

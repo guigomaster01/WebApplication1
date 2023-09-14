@@ -20,12 +20,19 @@ namespace WebApplication1.Models
             Matricula = new DateTime(2023,1,27);
         }
 
-        public static AlunoModel2 CriarEmerson()
+        public static AlunoModel2 CriarAluno()
         {
             var aluno = new AlunoModel2();
             aluno.Nome = "Emerson";
             return aluno;
+        }
+        public static List<AlunoModel2> CriarLista()
+        {
+            var lista = new List<AlunoModel2>();
+            lista.Add(new AlunoModel2());
+            lista.Add(AlunoModel2.CriarAluno());
 
+            return lista;
         }
     }
 }

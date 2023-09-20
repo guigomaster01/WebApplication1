@@ -29,8 +29,12 @@ namespace WebApplication1.Models
         public static List<AlunoModel2> CriarLista()
         {
             var lista = new List<AlunoModel2>();
-            lista.Add(new AlunoModel2());
-            lista.Add(AlunoModel2.CriarAluno());
+           // lista.Add(new AlunoModel2());
+           // lista.Add(AlunoModel2.CriarAluno());
+           lista.Add(new AlunoModel2() { Nome= "Nicolas", Curso = "DS", Faltas = 5, Matricula = DateTime.Now});
+           lista.Add(new AlunoModel2() { Nome= "Emerson", Curso = "DS", Faltas = 5, Matricula = DateTime.Now});
+           lista.Add(new AlunoModel2() { Nome= "Ana", Curso = "DS", Faltas = 5, Matricula = DateTime.Now});
+           lista.Add(new AlunoModel2() { Nome= "Vinicius", Curso = "DS", Faltas = 5, Matricula = DateTime.Now});
 
             return lista;
         }

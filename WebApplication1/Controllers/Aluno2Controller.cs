@@ -19,7 +19,10 @@ namespace WebApplication1.Controllers
         // GET: Aluno2/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var aluno = AlunoModel2.CriarLista()[id];
+            return View(aluno);
+
+
         }
 
         // GET: Aluno2/Create
@@ -31,13 +34,15 @@ namespace WebApplication1.Controllers
         // POST: Aluno2/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(AlunoModel2 collection)
         {
             try
             {
                 // TODO: Add insert logic here
 
+
                 return RedirectToAction(nameof(Index));
+                //return RedirectToAction(nameof(Details)); ***caso queira mandar o formulario pra pagina details depois***
             }
             catch
             {
@@ -59,7 +64,6 @@ namespace WebApplication1.Controllers
             try
             {
                 // TODO: Add update logic here
-
                 return RedirectToAction(nameof(Index));
             }
             catch

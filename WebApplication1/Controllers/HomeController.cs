@@ -12,7 +12,7 @@ namespace WebApplication1.Controllers
     {
         public IActionResult ExibirAluno()
         {
-            var aluno = new AlunoModel()
+            var aluno = new AlunoModel2()
             {
                 Nome = "Gabriel Gassner",
                 Curso = "Desenvolvimento de Sistemas"
